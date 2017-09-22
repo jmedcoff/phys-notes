@@ -1,0 +1,88 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{Chapter 15 Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Preliminaries}
+	
+	We have already learned about electric charge and how it behaves. Namely, opposite charges attract and like charges repel. Coulomb's Law governs this behavior. We can generalize to a single charge in space, and determine the electric field surrounding this charge.
+	When we combine the ideas of electric field and closed surfaces, we can talk about electric flux, which allows us to determine the amount of charge within a body in a simpler way. We can also apply Gauss's Law to exploit certain geometric symmetries, and make solving physics problems much simpler.
+	
+	\section{Problems}
+	
+	\subsection{Problem 1}
+	
+	Two electrons and a proton lie on the $y$ axis; the electrons are 10 and 15 cm from the origin, and the proton is 25 cm from the origin. What is the electric force on the proton?
+	
+    \textit{Solution.}
+    
+    Let $e_1$ and $e_2$ designate the electrons at 10 cm and 15 cm, respectively. The force of each electron is directed to the right toward the proton, so the direction vector $\hat{r}$ is simply $\uveci$.
+    
+    \begin{equation*}
+    \begin{split}
+    \vec{F}_{net} & = \vec{F}_{e_1} + \vec{F}_{e_2} \\
+                  & = K_e \frac{(-1.6 \times 10^{-19} C)(1.6 \times 10^{-19} C)}{(0.15 m)^2} \uveci + K_e \frac{(-1.6 \times 10^{-19} C)(1.6 \times 10^{-19} C)}{(0.1 m)^2} \uveci \\
+                  & = 3.327 \times 10^{-26} \ \uveci \ N \\
+    \end{split}
+    \end{equation*}
+    
+	\subsection{Problem 2}
+	
+	A metal ball of mass $m$ and charge $-2q$ is levitated above a conductor at a height $h$ by an electric force. What charge must be on the conductor in order to hold the ball steady?
+	
+	\textit{Solution.}
+	
+	For the ball to levitate at a consistent height, the force of gravity $F_g$ and the Coulomb force $F_e$ must be equal. If they were not, the ball would either fall to the ground or be fired upward. We know that gravity pulls the ball down, and the electric force pushes the ball up, so the forces are balanced if their magnitudes are balanced.
+	
+	Let $Q$ be the charge on the conductor. Then, it must be that
+	
+	\begin{equation*}
+	\begin{split}
+	|F_g| & = |F_e| \\
+	mg  & = K_e \frac{|-2q| Q}{h^2} \\
+	mgh^2 & = K_e 2q Q \\
+	\frac{mgh^2}{2q K_e} & = Q
+	\end{split}
+	\end{equation*}
+	
+	And in order for the ball to levitate above the conductor, each object must have the same sign of charge (i.e. both positive or both negative).
+	
+	\subsection{Problem 3}
+	
+	Consider a cylinder with radius 2 cm. If an electric field of $2.3 \times 10^5 \ N/C$ permeates the bottom of the cylinder with an angle of 30 degrees to the bottom, what is the flux through this part of the cylinder?
+	
+	\textit{Solution.}
+	
+	We know that a cylinder's bottom is a circle. When we measure angles for electric flux, we want the angle between the surface normal and the electric field. So, if 30 degrees is measured from the surface, 60 degrees would be measured from the normal. Therefore, applying the formula for electric flux, we have
+	
+	\begin{equation*}
+	\begin{split}
+	\Phi_E & = EA\cos(\theta) \\
+	       & = E (\pi r^2) \cos(60) \\
+	       & = (2.3 \times 10^5 \ N/C) (\pi (0.02)^2) \Big(\frac{1}{2} \Big) \\
+	       & = 144.5 \frac{Nm^2}{C}
+	\end{split}
+	\end{equation*} 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
