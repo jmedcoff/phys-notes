@@ -43,11 +43,97 @@
 	
 	\subsection{Problem 2}
 	
-	An electron moving at velocity $v$, moves between two charged plates producing an electric field of $2.5 \times 10^4 N/C$. 
+	An electron moving at velocity $v$, moves along the perpendicular between two charged plates producing an electric field of $2.5 \times 10^4 N/C$. Its final velocity is $3v$ after it has moved 2cm. What are its final velocity, initial velocity, and acceleration?
 	
+	\textit{Solution.}
 	
+	We know that due to the electric field, the electron will experience a change in kinetic energy determined by the electric potential energy it has in the field doing work. So, due to the conservation of energy, we know that 
 	
+	\begin{equation*}
+	\begin{split}
+	KE_i + W & = KE_f \\
+	\frac{1}{2}mv^2 - e\vec{E} \Delta x & = \frac{1}{2}m(3v)^2 \\
+	-e\vec{E} \Delta x & = \frac{9}{2}mv^2 - \frac{1}{2}mv^2 \\
+	& = 4mv^2 \\
+	\frac{-e\vec{E}\Delta x}{4m} & = v^2
+	\end{split}
+	\end{equation*}
 	
+	And since $e$ is an electron with negative charge, we can rewrite this as
+	$$ \frac{|e|\vec{E}\Delta x}{4m} = v^2 . $$
+	
+	Now, we can use the given values to get
+		\begin{equation*}
+		\begin{split}
+		\frac{(1.602 \times 10^{-19}C)(2.5 \times 10^4 N/C)(2 \times 10^{-2}m)}{4(9.11 \times 10^{-31}kg)} & = v^2 \\
+		2.20 \times 10^{13} m^2/s^2 & = v^2\\
+		4.69 \times 10^{6} m/s & = v
+		\end{split}
+		\end{equation*}
+		
+	Since it was given that the final velocity was three times the initial velocity, we have
+	\begin{equation*}
+	\begin{split}
+	v_f & = 3 v_i \\
+	    & = 3(4.69 \times 10^{6} m/s) \\
+	    & = 1.41 \times 10^{7}
+	\end{split}
+	\end{equation*}
+
+	Note that both velocities are less than the speed of light. If we had an impossibly large value for the velocity, we would be inclined to go back and double check our work.
+	
+	Recall from PHY 101 that
+	$$ v_f^2 - v_i^2 = 2ax $$
+	
+	and so we have
+	$$ (1.41 \times 10^{7})^2 - (4.69 \times 10^{6})^2 = 2a(0.02) $$
+	
+	which we can solve for $a$ to get
+	$$ a = 4.4 \times 10^{15} . $$
+		
+		
+	\subsection{Problem 3}
+	
+	Two point charges are located in the Cartesian plane. A 9nC charge lies at (0,0) and a 3nC charge lies at (3,4). What is the electric potential at (5,1)?
+	
+	\textit{Solution.}
+	
+	This problem asks about the potential at a point. It is not unlike finding the electric field at a point, but in this case, we need not worry about vectors or directions.
+	
+	Let $q_1$ be the 9nC charge, and let $q_2$ be the 3nC charge. We know that the formula for electric potential due to a single point charge is
+	$$ V = K_e \frac{q}{r} $$
+	so we can apply this rule for each charge to find total potential. Thus, we can write
+	$$ \sum V =  K_e \frac{q_1}{r_1} + K_e \frac{q_2}{r_2} $$
+	where $r_1$ and $r_2$ are the distances from each charge to the point of interest, (5,1). Finding these distances is trivial because we are on the Cartesian plane; we can simply use the Pythagorean theorem.
+	
+	\begin{equation*}
+	\begin{split}
+	r_1 & = \sqrt{(5-0)^2 + (1-0) ^2} \\
+	    & = \sqrt{5^2 + 1^2} \\
+	    & = \sqrt{26}
+	\end{split}
+	\end{equation*}
+	
+	\begin{equation*}
+	\begin{split}
+	r_2 & = \sqrt{(5-3)^2 + (1-4) ^2} \\
+	    & = \sqrt{2^2 + (-3)^2} \\
+	    & = \sqrt{13}
+	\end{split}
+	\end{equation*}	
+	
+	Using these numbers in the above formula, we have
+	
+	\begin{equation*}
+	\begin{split}
+	\sum V & = K_e \frac{q_1}{r_1} + K_e \frac{q_2}{r_2} \\
+	& = K_e \Big( \frac{9 \times 10^{-9}}{\sqrt{26}} + \frac{3 \times 10^{-9}}{\sqrt{13}} \Big) \\
+	& = 23.3
+	\end{split}
+	\end{equation*}
+	
+	So, the potential at the point (5,1) is 23.3 volts.
+		
 	
 	
 	
