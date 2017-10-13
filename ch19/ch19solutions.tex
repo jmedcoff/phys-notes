@@ -1,0 +1,74 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{Chapter 19 Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\section{Preliminaries}
+	
+	In this chapter we are introduced to magnetic forces and behavior of charge in the presence of magnetic fields. We assume that magnetic fields exist, but next chapter we will show where they come from.
+	
+	\section{Problems}
+	
+	\subsection{Problem 1}
+	
+	A 60 cm long wire is oriented from east to west above the equator and carries an eastward current of 5 amps. What is the magnitude and direction of the force on the wire due to earth's 30 $\mu$T northward magnetic field?
+	
+	\textit{Solution.}
+	We know that for current carrying wires, we have a formula for the force given by
+	$$ F = ILB\sin\theta . $$
+	From this we easily see that the magnitude of the force will be given by
+	\begin{equation*}
+	\begin{split}
+	F & = (5A)(60cm)(30\mu T)\sin(90^{\circ}) \\
+	& = 90 \times 10^{-6} \ N .
+	\end{split}
+	\end{equation*}
+	
+	To find the direction, we use the right hand rule with our fingers in the direction of current (east), and bend them north in the direction of the field to get a force radially away from the center of the earth.
+	
+	\subsection{Problem 2}
+	Find the magnetic field a distance of 10 cm from a wire carrying 3 A of current.
+	
+	\textit{Solution.}
+	Long current carrying wires give magnetic fields by
+	$$ B = \frac{\mu_0 I}{2\pi r} , $$
+	so when we let $I = 3$ and $r = 10$ cm we have
+	$$ B = \frac{\mu_0 (3)}{2\pi (10cm)} = 6\times 10^{-4} \ T. $$
+	
+	\subsection{Problem 3}
+	Two wires \textit{A} and \textit{B} experience magnetic force when placed in two different magnetic fields $B_A$ and $B_B$. Wire \textit{A} is twice as long and carries three times as much current as wire \textit{B}. Wire \textit{B} experiences seven times as much force as wire \textit{A}. How much stronger is $B_A$ than $B_B$?
+	
+	\textit{Solution.}
+	We know that for current carrying wires, the magnitude of the magnetic force is described as 
+	$$ F = ILB $$
+	so we can use algebraic manipulation to show the following:
+	\begin{equation*}
+	\begin{split}
+	7F_A & = F_B \\
+	7I_A L_A B_A & = I_B L_B B_B \\
+	7(3I_B)(2L_B)(B_A) & = I_B L_B B_B \\
+	\frac{B_A}{B_B} & = \frac{I_B L_B}{7(3)(2)(I_B)(L_B)} \\
+	\frac{B_A}{B_B} & = \frac{1}{42}
+	\end{split}
+	\end{equation*}
+	
+	So $B_A$ is one forty-second as strong as $B_B$.
+	
+	
+	
+	
+	
+	
+\end{document}
