@@ -1,0 +1,64 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{Chapter 19 Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\section{Preliminaries}
+	
+	We know that changing magnetic fields induce currents, and that currents cause magnetic fields. With these principles, we can solve unknowns in situations with moving objects in magnetic fields.
+	
+	\section{Problems}
+	
+	\subsection{Problem 1}
+	
+	The strength of the earth's magnetic field at the south magnetic pole is about $7 \times 10^{-5}$ T. If we wanted to, we could rotate a coil in the field to generate alternating current electricity at 60 Hz. How many turns with a coil of area 0.016 square meters are needed to generate 120 V rms?
+	
+	
+	\textit{Solution.}
+	We know that the peak emf produced will be $NAB\omega$. The rms voltage is then $NAB\omega / \sqrt{2}$. So the number of turns needed is
+	$$ N = \frac{\sqrt{2} V}{BA\omega} = \frac{\sqrt{2} 120}{(7 \times 10^{-5})(0.016)(2\pi)(60)} \\ = 4 \times 10^5 \ \text{turns}$$
+	
+	
+	\subsection{Problem 2}
+	
+	A .25 m long coil consists of 560 square turns with side length 6.5 cm. The coil is in a magnetic field of 1.2 T. The coil initially has its axis coinciding with the field direction, then it is turned 90 degrees about an axis perpendicular to the field direction in .2 ms. What is the induced emf?
+	
+	\textit{Solution.}
+	We know that Faraday's law governs the behavior described here. There is a changing magnetic flux in the coil. The flux initially is
+	$$ \Phi_0 = BNA\cos0 = BNA $$
+	and after rotation is
+	$$ \Phi = BNA\cos90 = 0 . $$
+	So, we have the change in flux as
+	$$ \Delta \Phi = BNA $$
+	and the emf in the coil is
+	$$ \Delta V = \frac{BNA}{t} = \frac{(1.2)(560)(6.5\times 10^{-2})^2}{.2\times 10^{-3}} = 1.4 \times 10^4 \ V. $$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
