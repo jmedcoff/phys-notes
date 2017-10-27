@@ -1,0 +1,84 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{Chapter 19 Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\subsection{Problem 1}
+	A cube with side length of 0.5 m is placed in a uniform magnetic field of strength 0.45 T oriented in the direction of a diagonal of the front face of the cube. Find the magnetic flux through each of the faces of the cube. What is the total flux through the cube?
+	
+	\textit{Solution.}
+	We know that we can obtain the flux through a surface by
+	$$ \Phi_B = BA\cos\theta $$
+	so we can simply apply this formula to each face of the cube. Note that the area of a face of the cube is
+	$$ A = s^2 = (.5)^2 = 0.25. $$
+	
+	Front face: $(0.45)(0.25)\cos90 = 0$ Wb.
+	
+	Top face: $(0.45)(0.25)\cos135 = -0.08$ Wb.
+	
+	Right face: $(0.45)(0.25)\cos135 = -0.08$ Wb.
+	
+	Back face: $(0.45)(0.25)\cos90 = 0$ Wb.
+	
+	Bottom face: $(0.45)(0.25)\cos45 = 0.08$ Wb.
+	
+	Left face: $(0.45)(0.25)\cos45 = 0.08$ Wb.
+	
+	Summing these for the total flux through the cube, we have 0 Wb, which is in agreement with Gauss's Law for magnetism: the magnetic flux through any closed surface is zero.
+	
+	\subsection{Problem 2}
+	A metal bar is moving perpendicular to a 1.5 T magnetic field with constant velocity 150 m/s. The bar delivers a current of 5.5 A to a 6.0 $\Omega$ load. How long is the bar, and how much force is necessary to keep the bar moving at its velocity?
+	
+	\textit{Solution.}
+	We know that the emf induced in a rod moving perpendicular to a magnetic field is given by
+	$$ \varepsilon = vBL $$
+	so we can find the current by also applying Ohm's Law. Then we have
+	$$ IR = vBL $$ and we can move terms to get
+	$$ L = \frac{IR}{vB} = \frac{5.5(6.0)}{150(1.5)} = 0.15 . $$
+	So the bar is of length 0.15 meters. Then we can find the force needed to move the bar by
+	$$ F = ILB $$
+	since the bar is moving at a 90 degree angle with respect to the field. So we have
+	$$ F = (5.5)(1.5)(0.15) = 1.2 $$
+	so the force required is 1.2 Newtons.
+	
+	\subsection{Problem 3}
+	\textbf{Challenge Problem:} A ring of aluminum is placed over the iron core of an electromagnet. The current in the coil is 60 Hz alternating current. Use Lenz's Law to show that the flux change due only to the time varying magnetic field through the ring is insufficient to explain why the ring is repelled from the electromagnet.
+	
+	\textit{Solution.}
+	An AC current in the electromagnet produces the following magnetic fields: $B$ is up and increasing, up and decreasing, down and increasing, down and decreasing. So the induced current in the ring produces the following induced fields $B_I$.
+	
+	$B$ is up and increasing, $B_I$ is down, the ring is repelled.
+	
+	$B$ is up and decreasing, $B_I$ is up, the ring is attracted.
+	
+	$B$ is down and increasing, $B_I$ is up, the ring is repelled.
+	
+	$B$ is down and decreasing, $B_I$ is down, the ring is attracted.
+	
+	So the net force on the ring over one cycle is zero, clearly. The force of gravity, however, is not zero, so if the time variant magnetic field was the only way the flux could change, the ring would not float.
+	
+	However, we must consider in reality that the flux in the ring changes when the ring moves up and down, since the magnetic field is no longer uniform. This flux change gives rise to additional induced magnetic field, which generates an average repulsive force on the ring.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
