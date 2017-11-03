@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{RC Circuits Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\subsection{Problem 1}
+	A 1500 $\Omega$ resistor and a 25 $\mu$F capacitor are connected to form a circuit. The capacitor has been previously charged to 35 Volts. How long does it take for the capacitor's voltage to drop to 15 V?
+	
+	\textit{Solution.}
+	We know that the charge on the plates at any time $t$ is given by
+	$$ Q = Q_0 e^{-t/RC} $$
+	and using the rule for capacitance $ C = Q/V$, we have
+	$$ \frac{V}{V_0} = e^{-t/RC} . $$
+	Then taking the natural logarithm, we have
+	$$ t = -RC \log(\frac{V}{V_0}) = -1500(25 \times 10^{-6}) \log(\frac{15}{35}) = 3.2 \times 10^{-2} \ s . $$
+	
+	
+	\subsection{Problem 2}
+	A 1500 $\mu$F capacitor is charged through a 25 k$\Omega$ resistor by a 12 V battery. How much time will pass before the capacitor is charged to 8 V?
+	
+	\textit{Solution.} We know that the charge on the plates of the capacitor is
+	$$ Q = CV $$
+	so we can write
+	$$ V = V_0 (1 - e^{t/RC}) . $$
+	We rearrange terms, and take the log of both sides to isolate $t$. Then, we have
+	$$ t = -RC \log(1-\frac{V}{V_0}) = -(25000)(1500 \times 10^{-6}) \log(1 - \frac{8}{12}) $$
+	and we have
+	$$ t = 41 s . $$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
