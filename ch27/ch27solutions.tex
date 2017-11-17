@@ -1,0 +1,59 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a4paper}
+
+\newcommand{\uveci}{{\boldsymbol{\hat{\textnormal{\bfseries\i}}}}}
+\newcommand{\uvecj}{{\boldsymbol{\hat{\textnormal{\bfseries\j}}}}}
+\newcommand{\uveck}{{\boldsymbol{\hat{\textnormal{\bfseries{k}}}}}}
+
+\title{Chapter 27 Practice Problems}
+\author{Jason Medcoff}
+\date{}
+
+\begin{document}
+	\maketitle
+	
+	\subsection{Problem 1} What is the momentum of a 0.055 nm photon? How fast must an electron travel to have this momentum?
+	
+	\textit{Solution.}
+	We know that the momentum of a massless particle is given by
+	$$ p = \frac{h}{\lambda} $$
+	so we have 
+	$$ p = \frac{6.626\times 10^{-23}}{0.055 \times 10^{-9}} = 1.21 \times 10^{-23} \ m/s.$$
+	
+	An electron would have to travel with a speed of
+	$$v = \frac{p}{m} = \frac{1.21 \times 10^{-23} }{9.11\times 10^{-31}} = 1.33 \times 10^{7} \ m/s. $$
+	
+	\subsection{Problem 2}
+	A 3.1 MeV photon collides with a stationary electron and is scattered backwards. How much energy does the photon impart to the electron?
+	
+	\textit{Solution.}
+	We can find the initial wavelength of the electron ($h$ in electron-volt seconds is used):
+	$$ \lambda = \frac{c}{f} = \frac{hc}{E} = \frac{(4.14 \times 10^{-15} \ eVs)(3 \times 10^8 \ m/s)}{3.1 \times 10^6 \ eV} = 4.01 \times 10^{-13} \ m . $$
+	
+	Now, the final wavelength of the photon is given by
+	$$ \lambda' = \lambda + \frac{h}{mc} (1-\cos\theta) = 4.01 \times 10^{-13} + (2.43 \times 10^{-12})(1-\cos180) = 5.26 \times 10^{-12} \ m.$$
+	
+	So
+	$$ \Delta E = hc \bigg( \frac{1}{\lambda'} - \frac{1}{\lambda} \bigg) = (6.626 \times 10^{-34})(3 \times 10^8) \bigg( \frac{1}{5.26 \times 10^{-12}} - \frac{1}{4.01 \times 10^{-13}} \bigg) = 4.58 \times 10^{-13} \ J .$$
+	
+	
+	\subsection{Problem 3}
+	A 75 kg person is running at 2 m/s. What is the de Broglie wavelength of this person? What can we say about the wave nature of macroscopic objects?
+	
+	\textit{Solution.}
+	We know that the de Broglie wavelength is
+	$$ \lambda = \frac{h}{mv} = \frac{6.626 \times 10^{-34}}{(75)(2)} = 4.4 \times 10^{-36} \ m.$$
+	This wave has incredibly short wavelength compared to the size of objects in our everyday world. It is no wonder then, why we do not see the wave nature of objects we interact with on a day to day basis.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
